@@ -27,7 +27,7 @@ function buscarProdutoPorID(id){
 
 
 app.get('/', (req, res) => {
-  res.render('index', { message: 'Olá, Mundo!' });
+  res.render('index', {produtos});
 });
 
 app.get('/produtos', (req, res) => {
