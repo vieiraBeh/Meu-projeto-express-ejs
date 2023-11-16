@@ -20,6 +20,12 @@ const produtos = [
   {id: 1200, nome: "LIGHTSTICK WEAPON", preco: "300", descricao: "Lightstick Ver 4 do grupo para shows", imagem: "img/prod12.jpg"},
 ]
 
+function buscarProdutoPorID(id){
+  const produto = produtos.find(produto => produto.id == id);
+  return produto  || null 
+};
+
+
 app.get('/', (req, res) => {
   res.render('index', { message: 'Olá, Mundo!' });
 });
