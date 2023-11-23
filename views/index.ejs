@@ -148,14 +148,15 @@
   
   <div class="p-3 mb-2" style="background-color: black;"><h3 class="text-start" style = "color: 
  pink;"><strong>PRODUCTS</strong></h3>
-    <h3 class="text-end"><button type="button" class="btn btn-outline-dark" style="background-color: pink;"><strong>MORE</strong></button></h3></br>
+    <h3 class="text-end"><button type="button" class="btn btn-outline-dark" style="background-color: pink;"><strong>MORE</strong></button></h3>
       <div class="container text-center" style="background-color: black;"> 
 
   <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
     <% for (let produto of produtos){%>
-    <div class="col"><a href="http://localhost:3000/produtos"><img src="img/prod1.jpg" class="d-block w-100" alt="..."></a></br><h5 style="color: pink;"><%= produto.nome %></h5><p style="color: pink;"><%= produto.preco %></p>
-      <% } %>
+    <div class="col"><a href="http://localhost:3000/produtos"><img src=<%= produto.imagem%> class="d-block w-100" alt="..."></a></br><h5 style="color: pink;"><%= produto.nome %></h5><p style="color: pink;"><%= produto.preco %></p>
     </div>
+      <% } %>
+    
 </div>
 </div>
 </div>
