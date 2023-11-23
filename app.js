@@ -25,6 +25,9 @@ function buscarProdutoPorID(id){
   return produto  || null 
 };
 
+for (let produto of produtos){
+  console.log(produto.titulo)
+}
 
 app.get('/', (req, res) => {
   res.render('index', {produtos});

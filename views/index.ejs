@@ -149,38 +149,18 @@
   <div class="p-3 mb-2" style="background-color: black;"><h3 class="text-start" style = "color: 
  pink;"><strong>PRODUCTS</strong></h3>
     <h3 class="text-end"><button type="button" class="btn btn-outline-dark" style="background-color: pink;"><strong>MORE</strong></button></h3></br>
-      <div class="container text-center" style="background-color: black;">
-  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
-    <div class="col"><a href="http://localhost:3000/produtos"><img src="img/prod1.jpg" class="d-block w-100" alt="..."></a></br><h5 style="color: pink;">ALBUM 'SOLO' JENNIE KIM</h5><p style="color: pink;">R$ 150,00</p></div>
-    <div class="col"><a href="http://localhost:3000/produtos"><img src="img/prod2.jpg" class="d-block w-100" alt="..."></a></br><h5 style="color: pink;">ALBUM 'LALISA' LALISA MANOBAN</h5><p style="color: pink;">R$ 150,00</p></div>
-    <div class="col"><a href="http://localhost:3000/produtos"><img src="img/prod3.jpg" class="d-block w-100" alt="..."></a></br><h5 style="color: pink;">ALBUM '-R-' ROSÉ</h5><p style="color: pink;">R$ 150,00</p></div>
-    <div class="col"><a href="http://localhost:3000/produtos"><img src="img/prod4.jpg" class="d-block w-100" alt="..."></a></br><h5 style="color: pink;">ALBUM 'ME' JISOO</h5><p style="color: pink;">R$ 150,00</p></div>
-  </div>
-   <br/>
-  <div class="container text-center" style="background-color: black;">
-  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
-    <div class="col"><a href="http://localhost:3000/produtos"><img src="img/prod5.jpg" class="d-block w-100" alt="..."></a></br><h5 style="color: pink;">ALBUM 'THE ALBUM' BLACKPINK</h5><p style="color: pink;">R$ 1200,00</p></div>
-    <div class="col"><a href="http://localhost:3000/produtos"><img src="img/prod6.jpg" class="d-block w-100" alt="..."></a></br><h5 style="color: pink;">ALBUM 'BORN PINK' BLACKPINK</h5><p style="color: pink;">R$ 1300,00</p></div>
-    <div class="col"><a href="http://localhost:3000/produtos"><img src="img/prod7.jpg" class="d-block w-100" alt="..."></a></br><h5 style="color: pink;">TICKET SEOUL - SOUTH KOREA - SHOW</h5><p style="color: pink;">R$ 700,00</p></div>
-    <div class="col"><a href="http://localhost:3000/produtos"><img src="img/prod8.jpg" class="d-block w-100" alt="..."></a></br><h5 style="color: pink;">TICKET - LOS ANGELES - SHOW</h5><p style="color: pink;">R$ 800,00</p></div>
-      </div>
-    </div>
-</br>
-    <div class="container text-center" style="background-color: black;">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
-          <div class="col"><a href="http://localhost:3000/produtos"><img src="img/prod9.jpg" class="d-block w-100" alt="..."></a></a></br><h5 style="color: pink;">LIGHTSTICK OFFICIAL</h5><p style="color: pink;">R$ 200,00</p></div>
-          <div class="col"><a href="http://localhost:3000/produtos"><img src="img/prod10.jpg" class="d-block w-100" alt="..."></a></br><h5 style="color: pink;">LIGHTSTICK WEAPON</h5><p style="color: pink;">R$ 300,00</p></div>
-          <div class="col"><a href="http://localhost:3000/produtos"><img src="img/prod11.jpg" class="d-block w-100" alt="..."></a></br><h5 style="color: pink;">LIGHTSTICK VER 2</h5><p style="color: pink;">R$ 300,00</p></div>
-          <div class="col"><a href="http://localhost:3000/produtos"><img src="img/prod12.jpg" class="d-block w-100" alt="..."></a></br><h5 style="color: pink;">LIGHTSTICK VER 4</h5><p style="color: pink;">R$ 300,00</p></div>
-            </div>
-          </div>
-  </div>
-</div>
-</br></br>
+      <div class="container text-center" style="background-color: black;"> 
 
-<% for (let produto of produtos){ %>
-    <h1>Brenda</h1>
- <% } %>
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+    <% for (let produto of produtos){%>
+    <div class="col"><a href="http://localhost:3000/produtos"><img src="img/prod1.jpg" class="d-block w-100" alt="..."></a></br><h5 style="color: pink;"><%= produto.nome %></h5><p style="color: pink;"><%= produto.preco %></p>
+      <% } %>
+    </div>
+</div>
+</div>
+</div>
+
+</br></br>
 
 <!---PROPAGANDA--->
 
