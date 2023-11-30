@@ -151,7 +151,7 @@
     <h3 class="text-end"><button type="button" class="btn btn-outline-dark" style="background-color: pink;"><strong>MORE</strong></button></h3>
       <div class="container text-center" style="background-color: black;"> 
 
-  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4" >
     <% for (let produto of produtos){%>
     <div class="col"><a href="/produto/<%= produto.id %>"><img src="<%= produto.imagem%>" class="d-block w-100" alt="..."></a></br><h5 style="color: pink;"><%= produto.nome %></h5><p style="color: pink;"><%= produto.preco %></p>
     </div>
