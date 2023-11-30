@@ -153,7 +153,7 @@
 
   <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4" >
     <% for (let produto of produtos){%>
-    <div class="col"><a href="/produto/<%= produto.id %>"><img src="<%= produto.imagem%>" class="d-block w-100" alt="..."></a></br><h5 style="color: pink;"><%= produto.nome %></h5><p style="color: pink;"><%= produto.preco %></p>
+    <div class="col"><a href="/produtos/<%= produto.id %>"><img src="<%= produto.imagem%>" class="d-block w-100" alt="..."></a></br><h5 style="color: pink;"><%= produto.nome %></h5><p style="color: pink;"><%= produto.preco %></p>
     </div>
       <% } %>
 </div>
